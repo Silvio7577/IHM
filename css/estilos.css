@@ -5,10 +5,65 @@
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    color: #5a5a5a;
+    color: #444444;
   }
-  
-  
+
+  /* NAV
+-------------------------------------------------- */
+  .navbar{
+    background-color: #0f15a2;
+  }
+
+  .btn-outline-success {
+    color: white;
+    border-color: white;
+  }
+
+  .btn-outline-success:hover{
+    background-color: #1818e0;
+    border-color: white;
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #fff;
+    background-color: #1acc8d;
+  }
+
+   /* MARKETING IMAGENES
+-------------------------------------------------- */
+
+  h2,.tit{
+    color: #1818e0;
+  }
+  .tit {
+    box-shadow: 2px 2px 5px 2px rgb(197, 193, 193);
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .titulo,.p-titulo{
+    font-family: 'Libre Baskerville', serif;
+  }
+   
+  .carousel-caption .btn{
+    color: #fff;
+    background-color: #1acc8d;
+    border-color: #1acc8d;
+    border-radius: 50px;
+    transition: 0.5s;
+  }
+
+  .carousel-caption .btn:hover{
+    background-color: #0cb97d;
+  }
+
+  .row .col-lg-4{
+    box-shadow: 2px 2px 5px 2px rgb(197, 193, 193);
+  }
+
+  .featurette-divider{
+    box-shadow: 3px 3px 5px 3px rgb(128, 124, 124);
+  }
+
   /* PERSONALIZA EL CARRUSEL
   -------------------------------------------------- */
   
@@ -20,6 +75,7 @@ body {
   .carousel-caption {
     bottom: 3rem;
     z-index: 10;
+    margin-bottom: 110px;
   }
   
   /* Declarar alturas debido al posicionamiento del elemento img */
@@ -54,6 +110,25 @@ body {
   .marketing .col-lg-4 p {
     margin-right: .75rem;
     margin-left: .75rem;
+  }
+
+  .btn {
+    color: #fff;
+    background-color: #1acc8d;
+    border-color: #1acc8d;
+  }
+
+  .btn:hover{
+    background-color: #0cb97d;
+    color: #fff;
+  }
+
+  .marketing h2 {
+    font-family: 'Libre Baskerville', serif;
+  }
+
+  .featurette-heading{
+
   }
   /* rtl:end:ignore */
   
