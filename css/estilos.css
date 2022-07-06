@@ -1,6 +1,19 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Relleno debajo del pie de página y cuerpo de texto más claro */
+html, body{
+  height:100%;
+  width: 100%;
+  margin:0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+#app{
+  min-height: 100%;
+  min-width: 100%;
+}
 
 body {
     padding-top: 3rem;
@@ -11,7 +24,35 @@ body {
   /* NAV
 -------------------------------------------------- */
   .navbar{
-    background-color: #0f15a2;
+    background-color: #072040;
+    height: 70px;
+  }
+
+  .navbar-brand{
+    margin-left: 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .espa{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .navbar-collapse{
+    background-color: #072040;
+    margin-top: 10px;
+  }
+
+  .navbar-toggler {
+    margin-right: 10px;
+  }
+
+  .cont-total{
+    padding-right: var(--bs-gutter-x,.0rem);
+    padding-left: var(--bs-gutter-x,.0rem);
   }
 
   .btn-outline-success {
@@ -29,31 +70,37 @@ body {
     background-color: #1acc8d;
   }
 
+  .navbar-dark .navbar-nav .nav-link:hover {
+    color: #FFFFFF;
+  }
+
    /* MARKETING IMAGENES
 -------------------------------------------------- */
 
   h2,.tit{
-    color: #1818e0;
+    color: #363434;
   }
   .tit {
-    box-shadow: 2px 2px 5px 2px rgb(197, 193, 193);
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  }
+  .equipo{
+    font-family: 'Prompt', sans-serif;
   }
 
   .titulo,.p-titulo{
-    font-family: 'Libre Baskerville', serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }
    
   .carousel-caption .btn{
     color: #fff;
-    background-color: #1acc8d;
-    border-color: #1acc8d;
-    border-radius: 50px;
+    background-color: #1973B8;
+    border-color: #1973B8;
     transition: 0.5s;
   }
 
   .carousel-caption .btn:hover{
-    background-color: #0cb97d;
+    background-color: #1464A5;
+    border-color: #1464A5;
   }
 
   .row .col-lg-4{
@@ -63,6 +110,59 @@ body {
   .featurette-divider{
     box-shadow: 3px 3px 5px 3px rgb(128, 124, 124);
   }
+
+  /*Animaciones*/
+
+  .animated.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    -moz-animation-name: fadeInUp;
+    -o-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+  }
+
+  .animated.fadeInLeftBig {
+    -webkit-animation-name: fadeInLeftBig;
+    -moz-animation-name: fadeInLeftBig;
+    -o-animation-name: fadeInLeftBig;
+    animation-name: fadeInLeftBig;
+  }
+
+  .animated.fadeInRightBig {
+    -webkit-animation-name: fadeInRightBig;
+    -moz-animation-name: fadeInRightBig;
+    -o-animation-name: fadeInRightBig;
+    animation-name: fadeInRightBig;
+  }
+
+  .animated.fadeInDownBig {
+    -webkit-animation-name: fadeInDownBig;
+    -moz-animation-name: fadeInDownBig;
+    -o-animation-name: fadeInDownBig;
+    animation-name: fadeInDownBig;
+  }
+
+  .animated.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    -moz-animation-name: fadeInUpBig;
+    -o-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+  }
+
+  .animated {
+      -webkit-animation-duration: 1s;
+      -moz-animation-duration: 1s;
+      -o-animation-duration: 1s;
+      animation-duration: 2s;
+      -webkit-animation-fill-mode: both;
+      -moz-animation-fill-mode: both;
+      -o-animation-fill-mode: both;
+      animation-fill-mode: both;
+  }
+  @keyframes fadeInUp{0%{opacity:0;transform:translateY(20px)}100%{opacity:1;transform:translateY(0)}}
+  @keyframes fadeInLeftBig{0%{opacity:0;-webkit-transform :translateX(-2000px)}100%{opacity:1;-webkit-transform:translateX(0)}}
+  @keyframes fadeInRightBig{0%{opacity:0;-webkit-transform:translateX(2000px)}100%{opacity: 1;-webkit-transform:translateX(0)}}
+  @keyframes fadeInDownBig{ 0%{opacity:0;-webkit-transform:translateY(-2000px)}100%{opacity:1;-webkit-transform:translateY(0)}}@-moz-keyframes fadeInDownBig{0%{opacity:0;-moz-transform:translateY(-2000px)}100%{opacity:1;-moz-transform:translateY(0)}}
+  @keyframes fadeInUpBig{0%{opacity:0;-webkit-transform:translateY(2000px)}100%{opacity:1;-webkit-transform:translateY(0)}}
 
   /* PERSONALIZA EL CARRUSEL
   -------------------------------------------------- */
@@ -114,18 +214,24 @@ body {
 
   .btn {
     color: #fff;
-    background-color: #1acc8d;
-    border-color: #1acc8d;
+    background-color: #028484;
+    border-color: #028484;
   }
 
   .btn:hover{
-    background-color: #0cb97d;
+    background-color: #02A5A5;
+    border-color: #02A5A5;
     color: #fff;
   }
 
-  .marketing h2 {
-    font-family: 'Libre Baskerville', serif;
+  .lead{
+    font-family: 'Jost', sans-serif;
+    color: #1C75B9;
   }
+
+  /* .marketing h2 {
+    font-family: 'Libre Baskerville', serif;
+  } */
 
   .featurette-heading{
 
@@ -146,6 +252,17 @@ body {
     line-height: 1;
     /* rtl:remove */
     letter-spacing: -.05rem;
+  }
+
+/* Footer
+  ------------------------- */
+
+  footer{
+    width: 100%;
+  }
+
+  .foter{
+    background-color: #072146;
   }
   
   /* RESPONSIVE CSS
@@ -169,3 +286,26 @@ body {
       margin-top: 7rem;
     }
   }
+
+  @media (max-width: 577px){
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,1.9rem);
+    padding-left: var(--bs-gutter-x,1.9rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .col-espa{
+    padding-bottom: 40px;
+  }
+
+  .lead{
+    font-size: 16px;
+  }
+
+  .cont-total{
+    padding-right: var(--bs-gutter-x,.0rem);
+    padding-left: var(--bs-gutter-x,.0rem);
+  }
+}

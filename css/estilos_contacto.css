@@ -1,0 +1,32 @@
+/*Informacion*/
+.desb{
+    word-wrap: break-word;
+}
+
+p {
+    margin: 0 0 10px;
+}
+
+.richtitle {
+    font-weight: 700;
+}
+
+@media (min-width: 576px){
+
+    .col-sm-4 {
+        flex: 0 0 auto;
+        width: 45.33333333%;
+    }
+}
+
+.divider{
+    box-shadow: 3px 3px 5px 3px rgb(128 124 124);
+}
+
+@media screen and (max-width: 799px) and (min-width: 320px)
+{
+  h1 {
+      font-size: 24px!important;
+      line-height: 22px!important;
+  }
+}

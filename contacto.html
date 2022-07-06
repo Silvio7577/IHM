@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leanding Page</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" crossorigin="anonymous">
+    <link rel="icon" href="/img/icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Trocchi&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+
+    <!--Esto es por conexion CDN
+      <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/carousel/">
+    -->
+
+
+    <!-- Bootstrap core CSS 
+<link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+-->
+    <!-- Favicons 
+<link rel="apple-touch-icon" href="/docs/5.1/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.1/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.1/assets/img/favicons/safari-pinned-tab.svg" color="#7952b3">
+<link rel="icon" href="/docs/5.1/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#7952b3"> -->
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Estilos -->
+    <link href="/css/estilos.css" rel="stylesheet">
+    <link href="/css/estilos_nosotros.css" rel="stylesheet">
+    <link href="/css/estilos_servicio.css" rel="stylesheet">
+    <link href="/css/estilos_contacto.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
+                <div class="container-fluid cont-total">
+                    <a class="navbar-brand" href="#">Silbot</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                            <li class="nav-item espa">
+                                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                            </li>
+                            <li class="nav-item espa">
+                                <a class="nav-link" href="/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item espa">
+                                <a class="nav-link " href="/servicio.html">Servicios</a>
+                            </li>
+                            <li class="nav-item espa">
+                                <a class="nav-link " href="/contacto.html">Contactos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2 espa" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-success espa" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="/img/Titulo-1.jpg" class="bd-placeholder-img" width="100%" height="100%"
+                            aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+                        <rect width="100%" height="100%" fill="#777" /></img>
+                        <div class="container">
+                            <div class="carousel-caption text-start">
+                                <h1 class="titulo">Asesoramiento para diseño y desarrollo web en Argentina</h1>
+                                <p class="p-titulo">Haga su consulta sin cargo y le brindarán los consejos necesarios</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Informacion
+       ================================================== -->
+            <div id="main-content">
+                <div class="container">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-sm-3">
+                                <div class="icon icon-wrap icon-circle icon-lg contrast-bg">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <h3>Dirección</h3>
+                                <ul class="list-unstyled">
+                                    <li>Valle chico Calle: 5 Casa: 15, SFDC</li>
+                                    <li>Maipu 469, SFDC</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icon icon-wrap icon-circle icon-lg contrast-bg">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <h3>Teléfonos</h3>
+                                <ul class="list-unstyled">
+                                    <li><a title="Contacto" href="tel:+3834050403">3834050403</a>
+                                    </li>
+                                    <li><a title="Telefono" href="tel:+3834050403">3834050403</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3 desb">
+                                <div class="icon icon-wrap icon-circle icon-lg contrast-bg">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <h3>E-Mail</h3>
+                                <ul class="list-unstyled">
+                                    <li><a href="silvio.sosap@gmail.com">silvio.sosap@gmail.com</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <div class="icon icon-wrap icon-circle icon-lg contrast-bg">
+                                    <i class="bi bi-clock-fill"></i>
+                                </div>
+                                <h3>Horarios</h3>
+                                <ul class="list-unstyled">
+                                    <li>
+                                        Lunes - Viernes
+                                        —
+                                        <strong>10:00 - 19:00 hs</strong>
+                                    </li>
+                                    <li>
+                                        Sábados
+                                        —
+                                        <strong>10:00 - 14:00 hs</strong>
+                                    </li>
+                                    <li>
+                                        Domingos
+                                        —
+                                        <strong>Cerrado</strong>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class="divider">
+                            <div>
+                                <p class="lead text-center no-mg-b">Complete el formulario con sus datos y dejenos su
+                                    consulta. Un asesor se comunicará con usted a la brevedad para hacer el diseño de su
+                                    página web. Especifíque todos los requisitos de su sitio web y si tiene paginas web de
+                                    referencia detalle las mismas en su mensaje.</p><br>
+                                <p id="#workshop" class="text-center">
+                                    Recuerde que el mejor diseñador web debe estar acompañado de un cliente que le brinde
+                                    información de calidad y material apropiado. El trabajo en conjunto logran la excelencia
+                                    por lo cuál no dude en compartirnos sus idéas para potenciar al máximo su desarrollo web
+                                    o estrategía de posicionamiento.</p>
+                            </div>
+                            <hr class="divider">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4 col-sm-8 col-sm-4">
+                                <p></p>
+                                <p><br><br></p>
+                                <div>
+                                    <p class="richtitle" itemprop="name">Silbot</p>
+                                    <p>Atención al cliente y Solicitud de Presupuestos</p>
+                                    <p>Valle Chico -Calle 5 Casa 15</p>
+                                    <p><span>4700</span> <span>-Catamarca-Capital</span></p>
+                                    <p><a title="E-mail Diseño Web Silbot" href="silvio.sosap@gmail.com">silvio.sosap@gmail.com</a></p>
+                                    <a title="Sitio Diseño Web Silbot" href="/index.html"
+                                        target="_parent">https://index.html </a><br>
+                                    <p>Teléfono: <span>3834050403</span></p>
+                                </div>
+                            </div>
+                            <!--Formulario-->
+                            <div class="col-md-6 col-sm-6 col-sm-6">
+                                <p></p>
+                                <p><br><br></p>
+                                <div class="form-part1">
+                                    <!---->
+                                    <div class="form-part2">
+                                        <div>
+                                            <div>
+                                                <form action=""
+                                                    data-hs-cf-bound="true">
+                                                    <div id="form_error_id">
+                                                        Error
+                                                    </div>
+                                                    <div id="form_success_id">
+                                                        Success
+                                                    </div>
+                                                    <div>
+                                                        <fieldset class="fieldset1">
+                                                            <div class="form-part3">
+                                                                <!---->
+                                                                <div class="form-part4">
+                                                                    <div class="form-part5">
+                                                                        <input type="hidden" name="form_action" value=""
+                                                                            class="input1">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <label for="first-name">
+                                                                    <span class="span1">Nombre</span>
+                                                                    <!---->
+                                                                    <span class="span2">*</span>
+                                                                </label>
+                                                                <div class="form-part7">
+                                                                    <div class="form-part8">
+                                                                        <input type="text" name="first_name"
+                                                                            placeholder="Tu nombre" required="required"
+                                                                            class="input2">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <label for="last-name">
+                                                                    <span class="span1">Apellido</span>
+                                                                    <!---->
+                                                                    <span class="span2">*</span>
+                                                                </label>
+                                                                <div class="form-part7">
+                                                                    <div class="form-part8">
+                                                                        <input type="text" name="last_name"
+                                                                            placeholder="Tu apellido"
+                                                                            required="required" class="input2">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <label for="phone"><span
+                                                                        class="span1">Teléfono</span>
+                                                                    <!----><span class="span2">*</span>
+                                                                </label>
+                                                                <div class="form-part7">
+                                                                    <div class="form-part8">
+                                                                        <input type="text" name="phone"
+                                                                            placeholder="Tu teléfono"
+                                                                            required="required" class="input2">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <label for="email">
+                                                                    <span class="span1">Correo
+                                                                        electrónico</span>
+                                                                    <!----><span class="span2">*</span>
+                                                                </label>
+                                                                <div class="form-part7">
+                                                                    <div class="form-part8">
+                                                                        <input type="email" name="email"
+                                                                            placeholder="Tu correo electrónico"
+                                                                            required="required" class="input2">
+                                                                        <!---->
+                                                                    </div>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <label for="message"><span
+                                                                        class="span1">Mensaje</span>
+                                                                    <!---->
+                                                                </label>
+                                                                <div class="form-part7">
+                                                                    <textarea placeholder="Tu mensaje" rows="4"
+                                                                        name="message"></textarea>
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                            <div class="form-part6">
+                                                                <!---->
+                                                                <div class="form-part7">
+                                                                    <input type="submit" value="ENVIAR" class="input3">
+                                                                    <!---->
+                                                                </div>
+                                                                <!---->
+                                                                <!---->
+                                                            </div>
+                                                        </fieldset>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="divider">
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- /FINALIZAR LAS CARACTERÍSTICAS -->
+
+            <!-- /.container -->
+
+
+            <!-- FOOTER -->
+            <div class="row featurette foter">
+                <footer class="text-center text-white">
+                    <!-- Grid container -->
+                    <div class="container p-4">
+                        <!-- Section: Social media -->
+                        <section class="mb-4">
+                            <!-- Facebook -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-facebook"></i></a>
+
+                            <!-- Twitter -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-twitter"></i></a>
+
+                            <!-- Google -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-google"></i></a>
+
+                            <!-- Instagram -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-instagram"></i></a>
+
+                            <!-- Linkedin -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-linkedin"></i></a>
+
+                            <!-- Github -->
+                            <a class="btn btn-outline-light btn-circle btn-floating m-1" href="#!" role="button"><i
+                                    class="bi bi-github"></i></a>
+                        </section>
+                        <!-- Section: Social media -->
+
+                        <!-- Section: Form -->
+
+                        <!-- Section: Form -->
+
+                        <!-- Section: Text -->
+                        <section class="mb-4">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                                repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                                eum harum corrupti dicta, aliquam sequi voluptate quas.
+                            </p>
+                        </section>
+                        <!-- Section: Text -->
+
+                        <!-- Section: Links -->
+                        <section class="">
+                            <!--Grid row-->
+
+                            <!--Grid row-->
+                        </section>
+                        <!-- Section: Links -->
+                    </div>
+                    <!-- Grid container -->
+
+                    <!-- Copyright -->
+                    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                        © 2022 Silbot:
+                        <a class="text-white" href="/index.html">Silbot.com</a>
+                    </div>
+                    <!-- Copyright -->
+                </footer>
+            </div>
+        </main>
+    </div>
+    <!-- Esto es la conexion CDN
+      <script src="/docs/5.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>      
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+
+    <script src="/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="/js/popper.min.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
