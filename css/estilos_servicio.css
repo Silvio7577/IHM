@@ -67,7 +67,8 @@
 }
 
 .contrast-bg {
-    background-color: #e8f5ff!important;
+    /* background-color: #e8f5ff!important; */
+    background-color: #ffc107e0!important;
 }
 
 .divider{
@@ -96,16 +97,53 @@
   @media screen and (max-width: 799px) and (min-width: 320px)
 {
   h1 {
-      font-size: 24px!important;
+      font-size: 22px!important;
       line-height: 22px!important;
   }
 }
 
-@media (max-width: 577px){
+
+@media (max-width: 767px){
+    .icon-wrap {
+        display: inline-block;
+        text-align: center;
+    }
 }
 
+
 .tipo{
-    font-family: 'Jost', sans-serif;
+    /* font-family: cursive; */
+    font-family: 'Josefin Sans', sans-serif;
     color: #1C75B9;
+    font-size: 1.23rem;
+}
+
+@media (max-width: 570px){
+    .cent{
+        text-align: center;
+    }
+    .icon-boxes .icon.icon-lg {
+        margin-right: 0px;
+    }
+    .icon-boxes .icon {
+        float: initial;
+        margin-bottom: 20px;
+        vertical-align: top;
+    }
+    .icon-boxes.icon-boxes-lg .icon-box {
+        text-align: center;
+    }
+}
+@media (max-width: 577px){
+    .cont-total {
+        padding-right: var(--bs-gutter-x,.0rem);
+        padding-left: var(--bs-gutter-x,.0rem);
+    }
+    .tipo{
+        /* font-family: cursive; */
+        font-family: 'Josefin Sans', sans-serif;
+        color: #1C75B9;
+        font-size: 17px;
+    }
 }
   

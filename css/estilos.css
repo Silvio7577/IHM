@@ -170,6 +170,7 @@ body {
   /* Carousel base class */
   .carousel {
     margin-bottom: 4rem;
+    margin-top: 1.4rem;
   }
   /* Desde el posicionamiento de la imagen, necesitamos ayudar al pie de foto. */
   .carousel-caption {
@@ -225,9 +226,12 @@ body {
   }
 
   .lead{
-    font-family: 'Jost', sans-serif;
+    /* font-family: cursive; */
+    font-family: 'Josefin Sans', sans-serif;
     color: #1C75B9;
   }
+
+
 
   /* .marketing h2 {
     font-family: 'Libre Baskerville', serif;
@@ -253,6 +257,13 @@ body {
     /* rtl:remove */
     letter-spacing: -.05rem;
   }
+
+  #myCarousel,
+.carousel-inner,
+.carousel-item > img,
+.carousel-item {
+  height: 555px;
+}
 
 /* Footer
   ------------------------- */
@@ -301,11 +312,26 @@ body {
   }
 
   .lead{
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .cont-total{
     padding-right: var(--bs-gutter-x,.0rem);
     padding-left: var(--bs-gutter-x,.0rem);
   }
+
+  #myCarousel,
+  .carousel-inner,
+  .carousel-item > img,
+  .carousel-item {
+    height: 410px;
+  }
+
+  .carousel-caption {
+    bottom: 0rem;
+    z-index: 10;
+    margin-bottom: 85px;
 }
+}
+
+

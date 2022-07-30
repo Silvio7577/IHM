@@ -7,13 +7,13 @@
 .carousel-inner,
 .carousel-item > img,
 .carousel-item {
-  height: 255px;
+  height: 450px;
 }
 
 .carousel-caption {
   bottom: 3rem;
   z-index: 10;
-  margin-bottom: 0px;
+  margin-bottom: 115px;
 }
 
 .titulo,.p-titulo {
@@ -26,14 +26,6 @@
 
 
 /**/
-
-@media screen and (max-width: 799px) and (min-width: 320px)
-{
-  h1 {
-      font-size: 24px!important;
-      line-height: 22px!important;
-  }
-}
 
 /*Contenido                                 */
 .row {
@@ -170,20 +162,6 @@
   transform: scale(1.04);
   transition: 1s;
   transition-property: all;
-}
-
-@media (max-width: 577px){
-  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-    width: 100%;
-    padding-right: var(--bs-gutter-x,1.9rem);
-    padding-left: var(--bs-gutter-x,1.9rem);
-    margin-right: auto;
-    margin-left: auto;
-  }
-
-  .col-espa{
-    padding-bottom: 40px;
-  }
 }
 
 /*Formularios*/
@@ -379,3 +357,70 @@ textarea {
   width: 100% !important;
   height: 45px !important;
 }
+
+.cambio{
+  color: #ffc107e0;
+}
+
+.tipo{
+  /* font-family: cursive; */
+  font-family: 'Josefin Sans', sans-serif;
+  color: #1C75B9;
+  font-size: 1.24rem;
+}
+
+@media (max-width: 577px){
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x,1.9rem);
+    padding-left: var(--bs-gutter-x,1.9rem);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .col-espa{
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 320px)
+{
+  h1 {
+      font-size: 22px!important;
+      line-height: 22px!important;
+  }
+
+  .cambio{
+    font-size: 38px!important;
+  }
+
+  .tama{
+    font-size: 30px!important;
+  }
+}
+
+@media (max-width: 500px){
+  #myCarousel,
+.carousel-inner,
+.carousel-item > img,
+.carousel-item {
+  height: 255px;
+}
+.carousel-caption {
+  margin-bottom: 0px;
+}
+}
+
+@media (max-width: 577px){
+  .cont-total {
+      padding-right: var(--bs-gutter-x,.0rem);
+      padding-left: var(--bs-gutter-x,.0rem);
+  }
+  .tipo {
+    /* font-family: cursive; */
+    font-family: 'Josefin Sans', sans-serif;
+    color: #1C75B9;
+    font-size: 17px;
+}
+}
+
